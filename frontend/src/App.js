@@ -7,13 +7,14 @@ import './sass/main.css'
 import ScrollToTop from './components/utils/ScrollToTop'
 
 import { Outlet } from 'react-router-dom'
+import Navbar from './components/layout/navbar/Navbar'
 
 const App = () => {
   return (
     <>
       <ToastContainer />
       <ScrollToTop />
-
+      <Navbar />
       <>
         <main>
           <Outlet />

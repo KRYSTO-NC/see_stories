@@ -205,8 +205,8 @@ button {
   color: #d8d9e5;
 }
 .bg-secondary {
-  background-color: #7EC7B8;
-  color: #32333d;
+  background-color: #898989;
+  color: #d8d9e5;
 }
 .bg-light {
   background-color: #d8d9e5;
@@ -575,8 +575,8 @@ button {
   color: #d8d9e5;
 }
 .bg-secondary {
-  background-color: #7EC7B8;
-  color: #32333d;
+  background-color: #898989;
+  color: #d8d9e5;
 }
 .bg-light {
   background-color: #d8d9e5;
@@ -830,4 +830,8 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.home-section {
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */

@@ -14,6 +14,7 @@ import PrivateRoute from './components/utils/PrivateRoute'
 import AdminRoute from './components/utils/AdminRoute'
 import NotFound from './screens/notFound/NotFound'
 import HomeScreen from './screens/homeScreen/HomeScreen'
+import AboutScreen from './screens/aboutScreen/AboutScreen'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       {/* Route générique pour gérer toutes les autres routes non définies */}
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<HomeScreen />}></Route>
+      <Route path="/A-propos" element={<AboutScreen />}></Route>
 
       {/* Registered users */}
       <Route path="" element={<PrivateRoute />}></Route>
