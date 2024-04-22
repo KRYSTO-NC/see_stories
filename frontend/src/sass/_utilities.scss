@@ -1,0 +1,90 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+// container
+.container {
+  max-width: $max-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  min-height: 100vh;
+  position: relative;
+ 
+  h1{
+    font-family: 'Poppins', sans-serif;
+    color: $primary-color;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  
+  }
+}
+
+// text styles
+
+.x-large {
+  font-size: 8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.medium {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.s-small {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-primary {
+  color: $primary-color;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background-color: $grey-color;
+  margin: 2rem 0;
+}
+// Backgrounds
+
+.bg {
+  &-primary {
+    @include setBackground($primary-color);
+  }
+  &-secondary {
+    @include setBackground($secondary-color);
+  }
+  &-light {
+    @include setBackground($light-color);
+    border: solid 1px #ccc;
+  }
+  &-dark {
+    @include setBackground($dark-color);
+  }
+  &-success {
+    @include setBackground($success-color);
+  }
+  &-danger {
+    @include setBackground($danger-color);
+  }
+  &-white {
+    @include setBackground(#fff);
+    border: solid 1px #ccc;
+  }
+}
+

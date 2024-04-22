@@ -1,0 +1,97 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './utilities.scss';
+@import './mixins.scss';
+@import './animations.scss';
+
+.form {
+    margin: 4rem 0;
+    &-group {
+        margin-bottom: 2rem;
+    }
+
+    &-text {
+        display: block;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        color: #888;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='date'],
+    input[type='number'],
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ccc;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+   .social-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        font-size: 4rem;
+        padding: 0.5rem;
+    }
+    &.twitter{
+        color: #1da1f2;
+    }
+    &.facebook{
+        color: #3b5998;
+    }
+    &.youtube{
+        color: #c4302b;
+    }
+    &.linkedin{
+        color: #0077b5;
+    }
+    &.instagram{
+        color: #e1306c;
+    }
+    
+   }
+}
+
+  
+.image-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+      position: relative;
+   
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    
+    margin: 2rem;
+    img {
+     height: 10rem;
+     width: 10rem;
+    }
+    button{
+      position: absolute;
+      left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: white;
+     color: red;
+     padding: 0.2rem;
+     height: auto;
+     &:hover{
+      background-color: white;
+       color: red;
+       scale: 1.1;
+    }
+    }
+  }
